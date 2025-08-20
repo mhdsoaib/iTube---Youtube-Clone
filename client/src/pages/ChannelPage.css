@@ -1,0 +1,124 @@
+.channel-page {
+    padding: 24px 40px;
+  }
+  
+  .channel-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .avatar {
+    background-color: #e63946;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .channel-videos .video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  
+  .video-card {
+    flex: 1 1 calc(25% - 24px);
+    max-width: calc(25% - 24px);
+    min-width: 260px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .video-title {
+    padding: 8px 12px;
+    font-weight: bold;
+    font-size: 0.95rem;
+  }
+  
+  .video-meta {
+    padding: 0 12px 8px;
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .video-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 0 12px 12px;
+  }
+  
+  .btn-edit,
+  .btn-delete {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .btn-edit {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .btn-edit:hover {
+    background-color: #388e3c;
+  }
+  
+  .btn-delete {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .btn-delete:hover {
+    background-color: #d32f2f;
+  }
+  
+  .no-videos {
+    padding: 20px;
+    color: #888;
+    font-style: italic;
+  }
+  
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+  .edit-form input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .edit-form button {
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
